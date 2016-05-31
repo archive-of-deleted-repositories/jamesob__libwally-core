@@ -13,6 +13,7 @@ public class test_bip32 {
 
     public void test() {
         final Object seedKey = Wally.bip32_key_from_seed(mSeed, ***REMOVED***);
+        Wally.bip32_key_free(seedKey);
     }
 
     public static void main(final String[] args) {
